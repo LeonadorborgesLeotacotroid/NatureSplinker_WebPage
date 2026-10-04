@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Splinker - Sistema de riego inteligente y autónomo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#inicio" class="logo">
+                <img src="assets/images/logo_img.png" alt="Nature Splinker" class="logo-img">
+                <span class="logo-text">Nature Splinker</span>
+            </a>
+            <button class="nav-toggle" aria-label="Abrir menú" id="navToggle">
+                <span class="nav-bar"></span>
+                <span class="nav-bar"></span>
+                <span class="nav-bar"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#producto" class="nav-link">Producto</a></li>
+                <li><a href="#quienes-somos" class="nav-link">Quiénes Somos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text animate__animated animate__fadeInLeft">
+                <h1 class="hero-title">Riego inteligente y autónomo para cultivos urbanos</h1>
+                <p class="hero-subtitle">Nature Splinker adapta el riego a cada especie vegetal en tiempo real, optimizando cada gota de agua con IA integrada.</p>
+                <a href="#producto" class="btn-primary">Conoce el sistema</a>
+            </div>
+            <div class="hero-image animate__animated animate__fadeInRight">
+                <img src="assets/images/producto_img.png" alt="Sistema de riego Nature Splinker" class="product-hero">
+            </div>
+        </div>
+    </section>
+
+    <!-- Producto -->
+    <section id="producto" class="section">
+        <div class="container">
+            <h2 class="section-title animate__animated" data-animate="animate__fadeInUp">¿Qué es Nature Splinker?</h2>
+            <div class="product-card animate__animated" data-animate="animate__fadeInUp">
+                <p class="product-text">Sistema de riego autónomo ciberfísico basado en <strong>ESP32</strong>, con <strong>IA integrada</strong> y <strong>sensores de humedad de alta precisión</strong>. Su algoritmo inteligente analiza las necesidades hídricas en tiempo real y se adapta por especie vegetal, garantizando un riego óptimo sin intervención humana.</p>
+                <p class="product-price">Precio competitivo: <span>$800.00 MXN</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title animate__animated" data-animate="animate__fadeInUp">Beneficios</h2>
+            <div class="grid">
+                <article class="card animate__animated" data-animate="animate__fadeInUp" data-delay="0ms">
+                    <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C7.58 2 4 5.58 4 10c0 3.87 3.05 7.05 7 7.59V20H9v2h6v-2h-2v-2.41c3.95-.54 7-3.72 7-7.59 0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
+                        <path d="M8.5 10c0-1.93 1.57-3.5 3.5-3.5v1.5c-1.1 0-2 .9-2 2H8.5z"/>
+                    </svg>
+                    <h3 class="card-title">Ahorro de agua</h3>
+                    <p class="card-text">Optimiza el consumo hídrico evitando riegos innecesarios y desperdicios.</p>
+                </article>
+                <article class="card animate__animated" data-animate="animate__fadeInUp" data-delay="80ms">
+                    <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 19v-6h6v6h2v-7H7v7h2zm-4-8h14l-7-7-7 7z"/>
+                    </svg>
+                    <h3 class="card-title">Automatización autónoma</h3>
+                    <p class="card-text">Toma decisiones inteligentes en tiempo real sin intervención humana.</p>
+                </article>
+                <article class="card animate__animated" data-animate="animate__fadeInUp" data-delay="160ms">
+                    <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L4 7v10l8 5 8-5V7L12 2zm0 2.5L18 8v8l-6 3.5-6-3.5V8l6-3.5z"/>
+                        <path d="M12 7v5l4 2"/>
+                    </svg>
+                    <h3 class="card-title">Prevención de pérdidas</h3>
+                    <p class="card-text">Protege cultivos urbanos manteniendo la humedad ideal para cada planta.</p>
+                </article>
+                <article class="card animate__animated" data-animate="animate__fadeInUp" data-delay="240ms">
+                    <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v16h12V4H6zm6 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+                    </svg>
+                    <h3 class="card-title">Sustentabilidad</h3>
+                    <p class="card-text">Impulsa la agricultura urbana responsable con uso eficiente de recursos.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo -->
+    <section id="quienes-somos" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Quiénes Somos</h2>
+            <p class="team-intro fade-in delay-1">El proyecto <strong>Nature Splinker</strong> es desarrollado por un equipo multidisciplinario del <strong>Instituto Tecnológico Superior de Progreso</strong> (TecNM Progreso), integrando conocimientos de ingeniería y administración para impulsar la producción agropecuaria inteligente y la sustentabilidad.</p>
+            
+            <h3 class="subsection-title fade-in">Autores / Desarrolladores</h3>
+            <div class="grid team-grid fade-in delay-1">
+                <article class="card team-card">
+                    <h4 class="team-name">Leonardo Melchor Borges Pech</h4>
+                    <p class="team-info">Ing. en Sistemas Computacionales (9.° Semestre)</p>
+                </article>
+                <article class="card team-card">
+                    <h4 class="team-name">Jesús Francisco Hernández Dzul</h4>
+                    <p class="team-info">Ing. en Sistemas Computacionales (9.° Semestre)</p>
+                </article>
+                <article class="card team-card">
+                    <h4 class="team-name">Andy Jesús Caballero Marrufo</h4>
+                    <p class="team-info">Ing. en Administración (7.° Semestre)</p>
+                </article>
+                <article class="card team-card">
+                    <h4 class="team-name">Jesús Eduardo Sosa Vera</h4>
+                    <p class="team-info">Ing. en Sistemas Computacionales (9.° Semestre)</p>
+                </article>
+            </div>
+
+            <h3 class="subsection-title fade-in">Asesores del Proyecto</h3>
+            <div class="grid advisors-grid fade-in delay-1">
+                <article class="card team-card">
+                    <h4 class="team-name">Miguel Santiago Uribe Gómez</h4>
+                    <p class="team-info"><a href="mailto:miguel.ug@progreso.tecnm.mx" class="link">miguel.ug@progreso.tecnm.mx</a></p>
+                </article>
+                <article class="card team-card">
+                    <h4 class="team-name">Arlette Adriana Valladares Pech</h4>
+                    <p class="team-info"><a href="mailto:cead_dprogreso@tecnm.mx" class="link">cead_dprogreso@tecnm.mx</a></p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="#inicio" class="logo footer-logo">
+                    <img src="assets/images/logo_img.png" alt="Nature Splinker" class="logo-img">
+                    <span class="logo-text">Nature Splinker</span>
+                </a>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Contacto</h4>
+                <a href="mailto:miguel.ug@progreso.tecnm.mx" class="footer-link">miguel.ug@progreso.tecnm.mx</a>
+                <a href="mailto:cead_dprogreso@tecnm.mx" class="footer-link">cead_dprogreso@tecnm.mx</a>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Avisos</h4>
+                <p class="footer-text">Aviso de privacidad: Este sitio tiene fines informativos sobre el proyecto Nature Splinker desarrollado en el Instituto Tecnológico Superior de Progreso (TecNM).</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nature Splinker. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
